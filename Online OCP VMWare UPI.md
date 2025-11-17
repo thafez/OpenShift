@@ -1,5 +1,6 @@
-![image](https://github.com/user-attachments/assets/a16a5985-78bf-48d5-b901-970497a18ce6)![image](https://github.com/user-attachments/assets/9a3071a2-187c-4593-9e14-dae9b4d80a12)# Openshift Online Installation 
-This document for Openshift online installation 
+# Openshift Online Installation (VMWare UPI Installation)
+
+This document for Openshift online installation on ESXI VMWare 
 
 ## Prepare Bastion Host
 
