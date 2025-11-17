@@ -331,7 +331,7 @@ Confirm that the router pod is running on the infra node
 
 **create CR for identity provider**
 
-  ```
+```yaml
 apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
@@ -344,7 +344,7 @@ spec:
     htpasswd:
       fileData:
         name: htpass-secret
-  ```
+```
 
 **add cluster admin role to user**
 
