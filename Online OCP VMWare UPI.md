@@ -76,7 +76,7 @@ kubectl completion bash >>/etc/bash_completion.d/kubectl_completion
 **Create install-config.yaml file**
 Specify more details about OpenShift Container Platform cluster’s platform or modify the values of the required parameters.
 
-```
+```yaml
 additionalTrustBundlePolicy: Proxyonly
 apiVersion: v1
 baseDomain: devfasah.sa
@@ -300,7 +300,7 @@ Moving the router to Infra Nodes
 
 add to spec
 
-```
+```yaml
   spec:
     nodePlacement:
       nodeSelector: 
@@ -402,7 +402,7 @@ EOF
 
 **Create a Butane config, 99-master-chrony-conf-override.bu, including the contents of the chrony.conf file for the control plane nodes**
 
-```
+```yaml
 variant: openshift
 version: 4.15.0
 metadata:
@@ -453,7 +453,7 @@ storage:
 
 **Create a Butane config, 99-worker-chrony-conf-override.bu, including the contents of the chrony.conf file for the compute nodes that references the NTP servers on the control plane nodes**
 
-```
+```yaml
 variant: openshift
 version: 4.15.0
 metadata:
